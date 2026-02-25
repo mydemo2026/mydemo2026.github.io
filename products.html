@@ -4,74 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>产品目录 | 工业零件外贸</title>
+  <span data-i18n-page-title="products.title" class="hidden" aria-hidden="true"></span>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <script src="js/i18n.js" defer></script>
 </head>
 <body class="font-sans text-steel-900 bg-white antialiased">
   <header class="border-b border-steel-200 bg-white/95 backdrop-blur sticky top-0 z-50">
     <nav class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="index.html" class="text-xl font-semibold tracking-tight text-steel-900">Industrial Parts</a>
       <ul class="flex items-center gap-8 text-sm text-steel-600">
-        <li><a href="index.html" class="hover:text-steel-900 transition">首页</a></li>
-        <li><a href="products.html" class="font-medium text-steel-900 border-b-2 border-steel-900 pb-0.5">产品目录</a></li>
-        <li><a href="contact.html" class="hover:text-steel-900 transition">联系我们</a></li>
+        <li><a href="index.html" class="hover:text-steel-900 transition" data-i18n="nav.home">首页</a></li>
+        <li><a href="products.html" class="font-medium text-steel-900 border-b-2 border-steel-900 pb-0.5" data-i18n="nav.products">产品目录</a></li>
+        <li><a href="contact.html" class="hover:text-steel-900 transition" data-i18n="nav.contact">联系我们</a></li>
+        <li class="lang-switch flex items-center gap-1">
+          <button type="button" data-lang="zh" class="px-1 text-steel-500 hover:text-steel-700 transition">中文</button>
+          <span class="text-steel-300">|</span>
+          <button type="button" data-lang="en" class="px-1 text-steel-500 hover:text-steel-700 transition">EN</button>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main class="max-w-5xl mx-auto px-6 py-16">
-    <p class="text-sm uppercase tracking-widest text-steel-500 mb-2">Product Catalog</p>
-    <h1 class="text-3xl md:text-4xl font-semibold tracking-tight text-steel-900">产品目录</h1>
-    <p class="mt-4 text-steel-600 max-w-2xl">标准件、非标件及定制加工，支持小批量与大批量订单。如需规格书或报价，请通过联系表单告知需求。</p>
+    <p class="text-sm uppercase tracking-widest text-steel-500 mb-2" data-i18n="products.label">Product Catalog</p>
+    <h1 class="text-3xl md:text-4xl font-semibold tracking-tight text-steel-900" data-i18n="products.heading">产品目录</h1>
+    <p class="mt-4 text-steel-600 max-w-2xl" data-i18n="products.desc">标准件、非标件及定制加工，支持小批量与大批量订单。如需规格书或报价，请通过联系表单告知需求。</p>
 
     <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <article class="border border-steel-200 rounded-lg p-6 hover:border-steel-400 transition">
         <div class="w-12 h-12 rounded bg-steel-100 flex items-center justify-center text-steel-600 font-mono text-sm">01</div>
-        <h2 class="mt-4 font-semibold text-steel-900">紧固件</h2>
-        <p class="mt-2 text-sm text-steel-600">螺栓、螺母、垫片、销钉等，多种材质与表面处理。</p>
+        <h2 class="mt-4 font-semibold text-steel-900" data-i18n="products.cat1">紧固件</h2>
+        <p class="mt-2 text-sm text-steel-600" data-i18n="products.cat1Desc">螺栓、螺母、垫片、销钉等，多种材质与表面处理。</p>
       </article>
       <article class="border border-steel-200 rounded-lg p-6 hover:border-steel-400 transition">
         <div class="w-12 h-12 rounded bg-steel-100 flex items-center justify-center text-steel-600 font-mono text-sm">02</div>
-        <h2 class="mt-4 font-semibold text-steel-900">传动件</h2>
-        <p class="mt-2 text-sm text-steel-600">齿轮、皮带轮、联轴器、轴承等传动与支承件。</p>
+        <h2 class="mt-4 font-semibold text-steel-900" data-i18n="products.cat2">传动件</h2>
+        <p class="mt-2 text-sm text-steel-600" data-i18n="products.cat2Desc">齿轮、皮带轮、联轴器、轴承等传动与支承件。</p>
       </article>
       <article class="border border-steel-200 rounded-lg p-6 hover:border-steel-400 transition">
         <div class="w-12 h-12 rounded bg-steel-100 flex items-center justify-center text-steel-600 font-mono text-sm">03</div>
-        <h2 class="mt-4 font-semibold text-steel-900">结构件</h2>
-        <p class="mt-2 text-sm text-steel-600">支架、法兰、壳体及钣金加工件。</p>
+        <h2 class="mt-4 font-semibold text-steel-900" data-i18n="products.cat3">结构件</h2>
+        <p class="mt-2 text-sm text-steel-600" data-i18n="products.cat3Desc">支架、法兰、壳体及钣金加工件。</p>
       </article>
       <article class="border border-steel-200 rounded-lg p-6 hover:border-steel-400 transition">
         <div class="w-12 h-12 rounded bg-steel-100 flex items-center justify-center text-steel-600 font-mono text-sm">04</div>
-        <h2 class="mt-4 font-semibold text-steel-900">液压气动件</h2>
-        <p class="mt-2 text-sm text-steel-600">接头、阀块、缸体及密封件等。</p>
+        <h2 class="mt-4 font-semibold text-steel-900" data-i18n="products.cat4">液压气动件</h2>
+        <p class="mt-2 text-sm text-steel-600" data-i18n="products.cat4Desc">接头、阀块、缸体及密封件等。</p>
       </article>
       <article class="border border-steel-200 rounded-lg p-6 hover:border-steel-400 transition">
         <div class="w-12 h-12 rounded bg-steel-100 flex items-center justify-center text-steel-600 font-mono text-sm">05</div>
-        <h2 class="mt-4 font-semibold text-steel-900">精密加工件</h2>
-        <p class="mt-2 text-sm text-steel-600">CNC 车铣、线切割、磨削等定制精密零件。</p>
+        <h2 class="mt-4 font-semibold text-steel-900" data-i18n="products.cat5">精密加工件</h2>
+        <p class="mt-2 text-sm text-steel-600" data-i18n="products.cat5Desc">CNC 车铣、线切割、磨削等定制精密零件。</p>
       </article>
       <article class="border border-steel-200 rounded-lg p-6 hover:border-steel-400 transition">
         <div class="w-12 h-12 rounded bg-steel-100 flex items-center justify-center text-steel-600 font-mono text-sm">06</div>
-        <h2 class="mt-4 font-semibold text-steel-900">表面处理</h2>
-        <p class="mt-2 text-sm text-steel-600">镀锌、发黑、阳极氧化、喷涂等。</p>
+        <h2 class="mt-4 font-semibold text-steel-900" data-i18n="products.cat6">表面处理</h2>
+        <p class="mt-2 text-sm text-steel-600" data-i18n="products.cat6Desc">镀锌、发黑、阳极氧化、喷涂等。</p>
       </article>
     </div>
 
     <div class="mt-16 pt-12 border-t border-steel-200 text-center">
-      <p class="text-steel-600">未找到所需品类？欢迎提供图纸或样品，我们支持定制开发。</p>
-      <a href="contact.html" class="inline-block mt-4 px-6 py-3 bg-steel-900 text-white text-sm font-medium rounded hover:bg-steel-800 transition">提交需求</a>
+      <p class="text-steel-600" data-i18n="products.customTip">未找到所需品类？欢迎提供图纸或样品，我们支持定制开发。</p>
+      <a href="contact.html" class="inline-block mt-4 px-6 py-3 bg-steel-900 text-white text-sm font-medium rounded hover:bg-steel-800 transition" data-i18n="products.submitNeed">提交需求</a>
     </div>
   </main>
 
   <footer class="border-t border-steel-200 bg-steel-900 text-steel-300 mt-20">
     <div class="max-w-5xl mx-auto px-6 py-12 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
-      <span>© 2026 Industrial Parts. All rights reserved.</span>
+      <span data-i18n="footer.copyright">© 2026 Industrial Parts. All rights reserved.</span>
       <ul class="flex gap-6">
-        <li><a href="index.html" class="hover:text-white transition">首页</a></li>
-        <li><a href="products.html" class="hover:text-white transition">产品目录</a></li>
-        <li><a href="contact.html" class="hover:text-white transition">联系我们</a></li>
+        <li><a href="index.html" class="hover:text-white transition" data-i18n="nav.home">首页</a></li>
+        <li><a href="products.html" class="hover:text-white transition" data-i18n="nav.products">产品目录</a></li>
+        <li><a href="contact.html" class="hover:text-white transition" data-i18n="nav.contact">联系我们</a></li>
       </ul>
     </div>
   </footer>

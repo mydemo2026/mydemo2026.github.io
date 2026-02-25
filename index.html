@@ -4,72 +4,79 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>首页 | 工业零件外贸</title>
+  <span data-i18n-page-title="index.title" class="hidden" aria-hidden="true"></span>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <script src="js/i18n.js" defer></script>
 </head>
 <body class="font-sans text-steel-900 bg-white antialiased">
   <header class="border-b border-steel-200 bg-white/95 backdrop-blur sticky top-0 z-50">
     <nav class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="index.html" class="text-xl font-semibold tracking-tight text-steel-900">Industrial Parts</a>
       <ul class="flex items-center gap-8 text-sm text-steel-600">
-        <li><a href="index.html" class="font-medium text-steel-900 border-b-2 border-steel-900 pb-0.5">首页</a></li>
-        <li><a href="products.html" class="hover:text-steel-900 transition">产品目录</a></li>
-        <li><a href="contact.html" class="hover:text-steel-900 transition">联系我们</a></li>
+        <li><a href="index.html" class="nav-link font-medium text-steel-900 border-b-2 border-steel-900 pb-0.5" data-i18n="nav.home">首页</a></li>
+        <li><a href="products.html" class="nav-link hover:text-steel-900 transition" data-i18n="nav.products">产品目录</a></li>
+        <li><a href="contact.html" class="nav-link hover:text-steel-900 transition" data-i18n="nav.contact">联系我们</a></li>
+        <li class="lang-switch flex items-center gap-1">
+          <button type="button" data-lang="zh" class="px-1 text-steel-900 font-medium hover:text-steel-700 transition">中文</button>
+          <span class="text-steel-300">|</span>
+          <button type="button" data-lang="en" class="px-1 text-steel-500 hover:text-steel-700 transition">EN</button>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="max-w-5xl mx-auto px-6 py-24 md:py-32">
-      <p class="text-sm uppercase tracking-widest text-steel-500 mb-4">精密制造 · 全球供应</p>
-      <h1 class="text-4xl md:text-5xl font-semibold tracking-tight text-steel-900 max-w-2xl leading-tight">
+      <p class="text-sm uppercase tracking-widest text-steel-500 mb-4" data-i18n="index.tagline">精密制造 · 全球供应</p>
+      <h1 class="text-4xl md:text-5xl font-semibold tracking-tight text-steel-900 max-w-2xl leading-tight" data-i18n="index.heroTitle">
         工业零件外贸，品质与交付的可靠伙伴
       </h1>
-      <p class="mt-6 text-lg text-steel-600 max-w-xl">
+      <p class="mt-6 text-lg text-steel-600 max-w-xl" data-i18n="index.heroDesc">
         专注机械零部件出口，从标准件到定制件，为全球客户提供稳定供应与专业服务。
       </p>
       <div class="mt-10 flex flex-wrap gap-4">
-        <a href="products.html" class="inline-flex items-center px-6 py-3 bg-steel-900 text-white text-sm font-medium rounded hover:bg-steel-800 transition">查看产品</a>
-        <a href="contact.html" class="inline-flex items-center px-6 py-3 border border-steel-300 text-steel-700 text-sm font-medium rounded hover:border-steel-500 hover:text-steel-900 transition">获取报价</a>
+        <a href="products.html" class="inline-flex items-center px-6 py-3 bg-steel-900 text-white text-sm font-medium rounded hover:bg-steel-800 transition" data-i18n="index.viewProducts">查看产品</a>
+        <a href="contact.html" class="inline-flex items-center px-6 py-3 border border-steel-300 text-steel-700 text-sm font-medium rounded hover:border-steel-500 hover:text-steel-900 transition" data-i18n="index.getQuote">获取报价</a>
       </div>
     </section>
 
     <section class="border-t border-steel-200 bg-steel-50">
       <div class="max-w-5xl mx-auto px-6 py-20">
-        <h2 class="text-sm uppercase tracking-widest text-steel-500 mb-8">为什么选择我们</h2>
+        <h2 class="text-sm uppercase tracking-widest text-steel-500 mb-8" data-i18n="index.whyUs">为什么选择我们</h2>
         <div class="grid md:grid-cols-3 gap-12">
           <div>
             <span class="text-3xl font-semibold text-steel-900">15+</span>
-            <p class="mt-2 text-steel-600">年行业经验</p>
+            <p class="mt-2 text-steel-600" data-i18n="index.years">年行业经验</p>
           </div>
           <div>
             <span class="text-3xl font-semibold text-steel-900">50+</span>
-            <p class="mt-2 text-steel-600">国家与地区客户</p>
+            <p class="mt-2 text-steel-600" data-i18n="index.countries">国家与地区客户</p>
           </div>
           <div>
             <span class="text-3xl font-semibold text-steel-900">100%</span>
-            <p class="mt-2 text-steel-600">质检出厂</p>
+            <p class="mt-2 text-steel-600" data-i18n="index.quality">质检出厂</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="max-w-5xl mx-auto px-6 py-20">
-      <h2 class="text-sm uppercase tracking-widest text-steel-500 mb-6">核心能力</h2>
+      <h2 class="text-sm uppercase tracking-widest text-steel-500 mb-6" data-i18n="index.capabilities">核心能力</h2>
       <ul class="space-y-6 text-steel-700">
         <li class="flex gap-4">
           <span class="text-steel-400 font-mono">01</span>
-          <span>标准件与定制件一站式采购，支持图纸与样品打样</span>
+          <span data-i18n="index.cap1">标准件与定制件一站式采购，支持图纸与样品打样</span>
         </li>
         <li class="flex gap-4">
           <span class="text-steel-400 font-mono">02</span>
-          <span>严格质检与包装，保障海运/空运交付安全</span>
+          <span data-i18n="index.cap2">严格质检与包装，保障海运/空运交付安全</span>
         </li>
         <li class="flex gap-4">
           <span class="text-steel-400 font-mono">03</span>
-          <span>多语言商务支持，响应及时，流程透明</span>
+          <span data-i18n="index.cap3">多语言商务支持，响应及时，流程透明</span>
         </li>
       </ul>
     </section>
@@ -77,11 +84,11 @@
 
   <footer class="border-t border-steel-200 bg-steel-900 text-steel-300">
     <div class="max-w-5xl mx-auto px-6 py-12 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
-      <span>© 2026 Industrial Parts. All rights reserved.</span>
+      <span data-i18n="footer.copyright">© 2026 Industrial Parts. All rights reserved.</span>
       <ul class="flex gap-6">
-        <li><a href="index.html" class="hover:text-white transition">首页</a></li>
-        <li><a href="products.html" class="hover:text-white transition">产品目录</a></li>
-        <li><a href="contact.html" class="hover:text-white transition">联系我们</a></li>
+        <li><a href="index.html" class="hover:text-white transition" data-i18n="nav.home">首页</a></li>
+        <li><a href="products.html" class="hover:text-white transition" data-i18n="nav.products">产品目录</a></li>
+        <li><a href="contact.html" class="hover:text-white transition" data-i18n="nav.contact">联系我们</a></li>
       </ul>
     </div>
   </footer>
